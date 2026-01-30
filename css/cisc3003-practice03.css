@@ -1,0 +1,206 @@
+/* ==========================================
+   CISC3003 Practice 03 CSS (Match Figure 2)
+   - scalable sizing (rem/em)
+   - headings: sans-serif, body: serif
+   - links: #00B0FF, hover background: #5D0057
+   - panel title bar: #7986CB
+   - caption strip: #C5CAE9
+   - review date: #FF80AB
+========================================== */
+
+/* ---------------------------
+   Base
+--------------------------- */
+:root{
+  --brand: #1A237E;
+  --link: #00B0FF;
+  --hoverbg: #5D0057;
+  --panelbar: #7986CB;
+  --capbg: #C5CAE9;
+  --dated: #FF80AB;
+  --border: #d6d6d6;
+  --pagebg: #e9e9ef;
+}
+
+html{ scroll-behavior: smooth; }
+
+body{
+  background: var(--pagebg);
+  color: #111;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.5;
+}
+
+/* ---------------------------
+   Links
+--------------------------- */
+a{
+  color: var(--link);
+  text-decoration: underline;
+}
+
+a:hover{
+  background: var(--hoverbg);
+  color: var(--link);
+}
+
+/* Make nav + footer links look like Figure 2 */
+.topnav a,
+.footer-links a{
+  display: inline-block;
+  padding: 0.2em 0.4em;
+  border-radius: 0.2em;
+  text-decoration: underline;
+}
+
+/* ---------------------------
+   Header / Footer (hint)
+--------------------------- */
+header, footer{
+  color: white;
+  background-color: var(--brand);
+  margin: 0em 4em 0.25em 4em;
+}
+
+.wrap{
+  padding: 1em 1.2em;
+}
+
+h1, h2, h3{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+  font-size: 2rem;
+}
+
+.tagline{
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-top: 0.2em;
+}
+
+.topnav{
+  list-style: none;
+  margin-top: 0.6em;
+}
+
+.topnav li{
+  display: inline-block;
+  margin-right: 0.7em;
+}
+
+.footer-links{
+  margin-bottom: 0.4em;
+}
+
+/* ---------------------------
+   Main container
+--------------------------- */
+.page{
+  margin: 0 4em 2em 4em;
+}
+
+.content{
+  background: #fff;
+  border: 0.08em solid var(--border);
+  padding: 1.2em;
+}
+
+/* ---------------------------
+   Panels
+--------------------------- */
+.panel{
+  border: 0.08em solid var(--border);
+  margin-bottom: 1.2em;
+  background: #fff;
+}
+
+.panel-title{
+  background: var(--panelbar);
+  color: white;
+  padding: 0.55em 0.8em;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+}
+
+.panel .desc{
+  padding: 0.8em;
+  font-size: 0.95rem;
+}
+
+.photo{
+  padding: 0.8em;
+}
+
+.photo img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.photo-cap{
+  background: var(--capbg);
+  padding: 0.55em 0.7em;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* ---------------------------
+   Related photos thumbnails
+--------------------------- */
+.thumbs{
+  padding: 0.8em;
+  display: flex;
+  gap: 0.7em;
+  flex-wrap: wrap;
+}
+
+.thumbs img{
+  width: 6.2em;
+  height: auto;
+  display: block;
+  border: 0.12em solid var(--border);
+}
+
+.thumbs a.active img{
+  border-color: var(--brand);
+}
+
+.note{
+  padding: 0 0.8em 0.9em;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* ---------------------------
+   Reviews
+--------------------------- */
+.review{
+  padding: 0.8em;
+  border-top: 0.08em solid var(--border);
+}
+
+.review:first-of-type{
+  border-top: 0;
+}
+
+.related-view{
+  padding: 0.8em;
+}
+
+.related-view img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.byline{
+  font-size: 0.9rem;
+  margin-bottom: 0.35em;
+}
+
+.date{
+  color: var(--dated);
+}
