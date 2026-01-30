@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CISC3003 Practice 03</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/cisc3003-practice03.css">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Share Your Travels</h1>
+      <p class="tagline">let us know where you've been</p>
+      <nav aria-label="Page">
+        <ul class="topnav">
+          <li><a href="#description">Description</a></li>
+          <li><a href="#related">Related Photos</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <article class="content">
+      <h2 class="visually-hidden">Central Park Page</h2>
+      <section id="description" class="panel">
+        <h2 class="panel-title">CENTRAL PARK</h2>
+
+        <figure class="photo">
+          <a id="main-link" href="images/large-central-park.jpg">
+            <img id="main-photo" src="images/central-park.jpg" alt="Central Park" title="Central Park">
+          </a>
+          <figcaption class="photo-cap"><em id="main-cap">Conservatory Pond in Central Park</em></figcaption>
+        </figure>
+
+        <p class="desc">
+          This photo of Conservatory Pond in
+          <a href="http://www.centralpark.com/">Central Park</a> in
+          <a href="newyork.html">New York City</a> was taken on October 22, 2011 with a Canon EOS 30D camera.
+        </p>
+      </section>
+
+<section id="related" class="panel">
+  <h2 class="panel-title">RELATED PHOTOS</h2>
+
+  <!-- 大图展示区：点击缩略图后，这里会切换 -->
+  <figure class="related-view">
+    <a id="related-link" href="images/related-large1.jpg">
+      <img id="related-large" src="images/related-large1.jpg" alt="Related photo 1">
+    </a>
+    <figcaption class="photo-cap"><em id="related-cap">Related photo 1</em></figcaption>
+  </figure>
+
+  <!-- 缩略图 -->
+	<div class="thumbs" role="group" aria-label="Related photos">
+    <a class="thumb active" href="images/related-large1.jpg" data-large="images/related-large1.jpg" data-cap="Related photo 1">
+      <img src="images/related-square1.jpg" alt="Related photo 1">
+    </a>
+    <a class="thumb" href="images/related-large2.jpg" data-large="images/related-large2.jpg" data-cap="Related photo 2">
+      <img src="images/related-square2.jpg" alt="Related photo 2">
+    </a>
+    <a class="thumb" href="images/related-large3.jpg" data-large="images/related-large3.jpg" data-cap="Related photo 3">
+      <img src="images/related-square3.jpg" alt="Related photo 3">
+    </a>
+  </div>
+
+  <p class="note">Click a thumbnail to show it as the large photo above.</p>
+
+  <noscript>
+    <p class="note">JavaScript is disabled. Clicking a thumbnail will open the large image.</p>
+  </noscript>
+</section>
+
+
+      <section id="reviews" class="panel">
+        <h2 class="panel-title">REVIEWS</h2>
+
+        <div class="review">
+          <p class="byline">By <span class="name">Ricardo</span> on <span class="date">2016-05-23</span></p>
+          <p>Easy on the HDR buddy.</p>
+        </div>
+
+        <div class="review last">
+          <p class="byline">By <span class="name">Susan</span> on <span class="date">2016-11-18</span></p>
+          <p>I love Central Park.</p>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p class="footer-links"><a href="#">Home</a> | <a href="#">Browse</a> | <a href="#">Search</a></p>
+      <p><em>Copyright &copy; 2017 Share Your Travels</em></p>
+      <p>CISC3003 Web Programming - 2026: Student ID + Student Name</p>
+    </div>
+  </footer>
+
+<script>
+  (function () {
+    var viewer = document.getElementById('related-large');
+    var viewerLink = document.getElementById('related-link');
+    var viewerCap = document.getElementById('related-cap');
+    if (!viewer || !viewerLink) return;
+
+    var thumbs = document.querySelectorAll('.thumbs a.thumb');
+
+    function setViewer(a){
+      var large = a.getAttribute('data-large') || a.getAttribute('href');
+      var cap = a.getAttribute('data-cap') || '';
+
+      viewer.setAttribute('src', large);
+      viewer.setAttribute('alt', cap || 'Related photo');
+      viewerLink.setAttribute('href', large);
+      if (viewerCap) viewerCap.textContent = cap;
+
+      for (var j = 0; j < thumbs.length; j++) thumbs[j].classList.remove('active');
+      a.classList.add('active');
+    }
+
+    // 页面加载时，用当前 active 的缩略图初始化大图
+    var init = document.querySelector('.thumbs a.thumb.active') || thumbs[0];
+    if (init) setViewer(init);
+
+    for (var i = 0; i < thumbs.length; i++) {
+      thumbs[i].addEventListener('click', function (e) {
+        e.preventDefault();
+        setViewer(this);
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>
