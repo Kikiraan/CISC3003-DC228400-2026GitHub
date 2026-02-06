@@ -1,0 +1,186 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+/* general text formatting */
+
+h1, h2, h3, nav, footer {
+ font-family: Lobster, Cambria, "Times New Roman", serif;
+}
+body {
+   font-family: "Open Sans", Verdana, Arial, sans-serif;
+   font-size: 100%;
+   background-color: #E8EAF6;
+}
+
+
+/* header and navigation */
+
+header, footer {
+  color: white;
+  background-color: #1A237E;
+  margin: 0em 4em 0.25em 4em;
+}
+header h1 { 
+  padding: 0.5rem 0 0 1.25rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+header p { 
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  padding: 0 0 0 1.25rem;
+}
+
+
+/* main article styling */
+main {
+   background-color: white;
+   margin: 1em 4em 1em 4em;
+   padding: 1em;
+}
+
+section {
+   margin-bottom: 1em;
+   padding: 0;
+   width: 100%;
+}
+
+
+legend { 
+  font-size: 1.35rem;
+  background-color: #7986CB;
+  height: 1.70rem;
+  color: #E8EAF6;
+  text-transform: uppercase;
+    width: 100%;
+    margin: 0;
+    padding: 5px 0;
+}
+
+fieldset {
+   margin: 0;
+   padding: 0;
+   background-color: #C5CAE9;
+   width: 100%;
+   border: none;
+}
+form p {
+   margin-top: 0.5em;
+}
+
+/* additions for Practice 04 layout */
+
+* { box-sizing: border-box; }
+
+section form {
+  padding: 0.75rem;
+}
+
+.form-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.form-table td {
+  padding: 0.55rem 0.6rem;
+  vertical-align: top;
+}
+
+label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  color: #1A237E;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.35rem 0.45rem;
+  border: 1px solid #9FA8DA;
+  border-radius: 2px;
+  background: white;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.small-input {
+  width: 5rem !important;
+}
+
+.color-input {
+  width: 3rem !important;
+  padding: 0;
+  height: 1.6rem;
+}
+
+.group {
+  border: 1px solid #9FA8DA;
+  padding: 0.6rem;
+  background: rgba(255,255,255,0.25);
+}
+
+.group h3 {
+  font-family: "Open Sans", Verdana, Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 0.35rem;
+  color: #1A237E;
+  text-transform: none;
+}
+
+.inline {
+  display: inline-block;
+  margin-right: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.softbar {
+  background-color: #9FA8DA;
+  padding: 0.55rem 0.6rem;
+}
+
+.softbar label {
+  display: inline;
+  font-weight: normal;
+  color: #1A237E;
+}
+
+.btnbar {
+  background-color: #9FA8DA;
+  padding: 0.85rem 0.6rem;
+}
+
+.rounded {
+  background-color: #E91E63;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.55rem 1.25rem;
+  margin-right: 0.6rem;
+  cursor: pointer;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.25);
+  font-size: 0.9rem;
+}
+
+.rounded:hover {
+  filter: brightness(0.95);
+}
+
+footer {
+  padding: 0.75rem 1.25rem;
+  margin-top: 0.5em;
+  font-family: "Open Sans", Verdana, Arial, sans-serif;
+  font-size: 0.85rem;
+  background-color: #1A237E;
+}
