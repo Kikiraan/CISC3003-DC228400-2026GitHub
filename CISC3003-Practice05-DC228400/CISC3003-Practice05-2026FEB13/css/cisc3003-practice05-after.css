@@ -1,0 +1,198 @@
+body, header, div, p, h1, h2, h3, h4 {
+   margin: 0;
+    padding: 0;
+    font-family: "Open Sans", "Arial", sans-serif;
+}
+h1, h2, h3, h4 {
+    font-family: 'Merriweather', "Times New Roman", serif;
+}
+header h1, header h2 {
+    color: white;
+}
+header h1 {
+    font-size: 48px;
+}
+header h2 {
+    font-size: 36px;
+}
+header span {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 24px;
+    width: 160px;
+    padding: 9px;
+    border: solid 1px white;
+}
+header span a:link, header span a:visited {
+    color: white;
+}
+
+/* ====== layout additions for Practice 05 ====== */
+
+body{
+    background:#fff;
+}
+
+img{
+    display:block;
+    max-width:100%;
+    height:auto;
+}
+
+header{
+    position:relative;
+    width:100%;
+    max-width:1000px;
+    margin:0 auto;
+}
+
+header .banner{
+    width:100%;
+    filter:grayscale(100%) brightness(55%);
+}
+
+header .banner--title{
+    position:absolute;
+    top:55%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:90%;
+    text-align:center;
+}
+
+header .banner--title h1{
+    text-shadow:0 2px 6px rgba(0,0,0,0.65);
+}
+
+header .banner--title h2{
+    margin-top:6px;
+    text-shadow:0 2px 6px rgba(0,0,0,0.65);
+}
+
+header .banner--title span{
+    display:inline-block;
+    margin-top:14px;
+}
+
+header .banner--title span a{
+    text-decoration:none;
+}
+
+/* main article width */
+article{
+    max-width:1000px;
+    margin:0 auto;
+    padding:0 0 30px 0;
+}
+
+/* ====== highlights ====== */
+.highlights{
+    width:900px;
+    margin:18px auto 0 auto;
+    border-top:2px solid #000;
+    padding-top:10px;
+}
+
+.highlights > h2{
+    font-size:18px;
+    color:#000;
+    margin:0 0 8px 0;
+}
+
+.highlights--container{
+    float:left;
+    width:440px;
+    margin-right:20px;
+}
+
+.highlights--container:last-child{
+    margin-right:0;
+}
+
+.highlights--media{
+    float:left;
+    width:200px;
+}
+
+.highlights--media img{
+    width:200px;
+}
+
+.highlights--text{
+    float:left;
+    width:230px;
+    margin-left:10px;
+    font-size:12px;
+    line-height:1.25;
+}
+
+.highlights--text h4{
+    font-size:12px;
+    font-weight:700;
+    margin-bottom:4px;
+}
+
+.highlights--text p{
+    margin-bottom:3px;
+}
+
+.highlights--button{
+    float:right;
+    padding:4px 8px;
+    background:#e67e22;
+    color:#fff;
+    text-decoration:none;
+    font-size:11px;
+    margin-top:6px;
+}
+
+.highlights:after,
+.highlights--container:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+/* ====== mosaic ====== */
+.mosaic{
+    position:relative;
+    width:900px;
+    height:720px;
+    margin:18px auto 0 auto;
+}
+
+.mosaic-item{
+    position:absolute;
+    overflow:hidden;
+}
+
+.mosaic-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* 10px gaps are approximated via coordinates below */
+.mosaic--h{ top:0px;   left:0px;   width:440px; height:300px; }
+.mosaic--i{ top:0px;   left:450px; width:220px; height:145px; }
+.mosaic--j{ top:155px; left:450px; width:220px; height:145px; }
+.mosaic--k{ top:0px;   left:680px; width:220px; height:300px; }
+
+.mosaic--a{ top:310px; left:0px;   width:210px; height:260px; }
+.mosaic--f{ top:310px; left:220px; width:210px; height:120px; }
+.mosaic--g{ top:310px; left:440px; width:230px; height:120px; }
+.mosaic--d{ top:310px; left:680px; width:220px; height:260px; }
+
+.mosaic--e{ top:440px; left:220px; width:450px; height:130px; }
+.mosaic--b{ top:580px; left:220px; width:450px; height:130px; }
+.mosaic--c{ top:580px; left:0px;   width:210px; height:130px; }
+
+/* keep the page usable if window is smaller */
+@media (max-width: 980px){
+    .highlights, .mosaic{ width:96%; }
+    .highlights--container{ width:48%; margin-right:4%; }
+    .highlights--container:last-child{ margin-right:0; }
+    .highlights--media{ width:45%; }
+    .highlights--media img{ width:100%; }
+    .highlights--text{ width:50%; margin-left:5%; }
+}
