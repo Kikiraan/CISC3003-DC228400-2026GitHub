@@ -1,0 +1,172 @@
+body, header, article, div, p, h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", "Arial", sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Merriweather", "Times New Roman", serif;
+}
+
+body {
+    background: #fff;
+}
+
+/* -------- Banner -------- */
+header {
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header .banner {
+    width: 1170px;
+    display: block;
+}
+
+header h1, header h2 {
+    color: #fff;
+}
+
+header h1 {
+    font-size: 48px;
+}
+
+header h2 {
+    font-size: 36px;
+}
+
+.banner--title {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+.banner--title span {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 24px;
+    width: 160px;
+    padding: 9px;
+    border: solid 1px #fff;
+}
+
+.banner--title span a:link,
+.banner--title span a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* -------- Main Container -------- */
+article {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* -------- Highlights -------- */
+.highlights {
+    width: 1170px;
+    margin: 18px auto 0 auto;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #999;
+}
+
+.highlights h2 {
+    display: inline-block;
+    margin: 10px 0 12px 0;
+    padding-bottom: 2px;
+    font-size: 22px;
+    border-bottom: 2px solid #000;
+}
+
+.highlights--container {
+    float: left;
+    width: 575px;
+}
+
+.highlights--container:first-of-type {
+    margin-right: 20px;
+}
+
+.highlights--media {
+    float: left;
+    width: 200px;
+}
+
+.highlights--media img {
+    width: 190px;
+    height: 130px;
+    display: block;
+    object-fit: cover;
+}
+
+.highlights--text {
+    overflow: hidden;
+    padding-left: 10px;
+}
+
+.highlights--text h4 {
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.highlights--text p {
+    font-size: 12px;
+    line-height: 1.25em;
+    margin-bottom: 4px;
+}
+
+.highlights--button {
+    float: right;
+    background: #d97a1c;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 2px;
+}
+
+.highlights:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* -------- Mosaic (absolute positioning) -------- */
+.mosaic {
+    width: 1170px;
+    height: 990px;
+    margin: 10px auto 0 auto; /* 10px space above mosaic */
+    position: relative;       /* positioned ancestor for absolute children */
+}
+
+.mosaic-item {
+    position: absolute;
+    overflow: hidden;
+}
+
+.mosaic-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* 10px gaps are built into these coordinates */
+.mosaic--a { left: 0px;   top: 0px;   width: 580px; height: 390px; }
+.mosaic--b { left: 590px; top: 0px;   width: 285px; height: 190px; }
+.mosaic--c { left: 590px; top: 200px; width: 285px; height: 190px; }
+.mosaic--d { left: 885px; top: 0px;   width: 285px; height: 390px; }
+
+.mosaic--e { left: 0px;   top: 400px; width: 285px; height: 390px; }
+.mosaic--f { left: 295px; top: 400px; width: 285px; height: 190px; }
+.mosaic--g { left: 590px; top: 400px; width: 285px; height: 190px; }
+.mosaic--h { left: 885px; top: 400px; width: 285px; height: 390px; }
+
+.mosaic--i { left: 0px;   top: 800px; width: 285px; height: 190px; }
+.mosaic--j { left: 295px; top: 600px; width: 580px; height: 390px; }
+.mosaic--k { left: 885px; top: 800px; width: 285px; height: 190px; }
