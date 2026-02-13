@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CISC3003 Practice 04 - Share Your Travel Photos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/cisc3003-practice04.css">
+</head>
+
+<body>
+  <header>
+    <h1>Share Your Travels</h1>
+    <p>let us know where you've been</p>
+  </header>
+
+  <main>
+    <section>
+      <form action="process.php" method="post">
+        <fieldset>
+          <legend>Photo Details</legend>
+
+          <table class="form-table">
+            <tr>
+              <td colspan="2">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" placeholder="Give your photo a descriptive name">
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="2">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" rows="5" cols="61" placeholder="Adding a rich description will help with search results"></textarea>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="width:55%">
+                <label for="continent">Continent</label>
+                <select id="continent" name="continent">
+                  <option value="">Choose continent</option>
+                  <option value="africa">Africa</option>
+                  <option value="asia">Asia</option>
+                  <option value="europe">Europe</option>
+                  <option value="north_america">North America</option>
+                  <option value="south_america">South America</option>
+                </select>
+
+                <div style="height:0.6rem"></div>
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="">Choose country</option>
+                  <option value="canada">Canada</option>
+                  <option value="mexico">Mexico</option>
+                  <option value="united_states">United States</option>
+                </select>
+
+                <div style="height:0.6rem"></div>
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" list="citylist">
+                <datalist id="citylist">
+                  <option value="Calgary"></option>
+                  <option value="Montreal"></option>
+                  <option value="Toronto"></option>
+                  <option value="Vancouver"></option>
+                </datalist>
+              </td>
+
+              <td style="width:45%">
+                <div class="group">
+                  <h2>Copyright?</h2>
+                  <label class="inline"><input type="radio" name="copyright" value="all" checked> All rights reserved</label>
+                  <label class="inline"><input type="radio" name="copyright" value="cc"> Creative Commons</label>
+                </div>
+
+                <div style="height:0.6rem"></div>
+
+                <div class="group">
+                  <h3>Creative Commons Types</h3>
+                  <label><input type="checkbox" name="cc[]" value="1"> Attribution</label>
+                  <label><input type="checkbox" name="cc[]" value="2"> Noncommercial</label>
+                  <label><input type="checkbox" name="cc[]" value="3"> No Derivative Works</label>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="2" class="softbar">
+                <label><input type="checkbox" name="license" value="1"> I accept the software license</label>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="rate">Rate this photo:</label>
+                <input type="number" id="rate" min="1" max="5" name="rate" class="small-input">
+
+                <div style="height:0.6rem"></div>
+
+                <label for="color">Color Collection:</label>
+                <input type="color" id="color" name="color" class="color-input">
+              </td>
+
+              <td>
+                <div class="group">
+                  <label for="date">Date Taken:</label>
+                  <input type="date" id="date" name="date" style="max-width: 12rem">
+
+                  <div style="height:0.6rem"></div>
+
+                  <label for="time">Time Taken:</label>
+                  <input type="time" id="time" name="time" style="max-width: 8rem">
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="2" class="btnbar">
+                <input type="submit" value="Submit" class="rounded">
+                <input type="reset" value="Clear Form" class="rounded">
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>CISC3003 Practice 04</p>
+  </footer>
+</body>
+</html>
