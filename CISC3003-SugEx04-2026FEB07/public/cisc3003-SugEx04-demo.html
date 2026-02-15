@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CISC3003 SugEx04 eCommerce Demo</title>
+
+  <link rel="stylesheet" href="../css/cisc3003-SugEx04-demo.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+
+<body>
+  <header class="hero" id="top">
+    <div class="container">
+      <div class="nav">
+        <a class="logo" href="#top">
+          <img src="../images/logo.png" alt="Logo" />
+        </a>
+
+        <nav class="navlinks" aria-label="Primary">
+          <ul id="menu">
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#latest">Latest</a></li>
+            <li><a href="#offer">Offer</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#brands">Brands</a></li>
+          </ul>
+        </nav>
+
+        <div class="navicons">
+          <a class="cart" href="#footer" aria-label="Cart">
+            <img src="../images/cart.png" alt="Cart" />
+          </a>
+          <button class="menu-btn" type="button" aria-label="Menu" onclick="toggleMenu()">
+            <img src="../images/menu.png" alt="Menu" />
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h1>Make Your Style<br/>Stand Out</h1>
+          <p>
+            A clean one-page eCommerce demo with responsive navigation,
+            product cards, ratings, testimonials, and brand showcase.
+          </p>
+          <a class="btn" href="#featured">Explore Now &#8594;</a>
+        </div>
+        <div class="hero-img">
+          <img src="../images/image1.png" alt="Hero" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section" id="categories">
+    <div class="container">
+      <h2 class="title">Feature Categories</h2>
+      <div class="grid-3">
+        <div class="card-img">
+          <img src="../images/category-1.jpg" alt="Category 1" />
+        </div>
+        <div class="card-img">
+          <img src="../images/category-2.jpg" alt="Category 2" />
+        </div>
+        <div class="card-img">
+          <img src="../images/category-3.jpg" alt="Category 3" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="featured">
+    <div class="container">
+      <h2 class="title">Feature Products</h2>
+
+      <div class="grid-4">
+        <article class="product">
+          <img src="../images/product-1.jpg" alt="Product 1" />
+          <h3>Classic Tee</h3>
+          <div class="rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>
+          </div>
+          <p class="price">$50.00</p>
+        </article>
+
+        <article class="product">
+          <img src="../images/product-2.jpg" alt="Product 2" />
+          <h3>Sport Shoes</h3>
+          <div class="rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+          </div>
+          <p class="price">$75.00</p>
+        </article>
+
+        <article class="product">
+          <img src="../images/product-3.jpg" alt="Product 3" />
+          <h3>Summer Pants</h3>
+          <div class="rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+          </div>
+          <p class="price">$35.00</p>
+        </article>
+
+        <article class="product">
+          <img src="../images/product-4.jpg" alt="Product 4" />
+          <h3>Everyday Polo</h3>
+          <div class="rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i>
+          </div>
+          <p class="price">$60.00</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="latest">
+    <div class="container">
+      <h2 class="title">Latest Products</h2>
+
+      <div class="grid-4">
+        <article class="product">
+          <img src="../images/product-5.jpg" alt="Product 5" />
+          <h3>Casual Sneakers</h3>
+          <div class="rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+          </div>
+          <p class="price">$90.00</p>
+        </article>
+
+        <article class="product">
+          <img src="../images/product-6.jpg" alt="Product 6" />
+          <h3>Basic Tee</h3>
+          <div class="rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>
+          </div>
+          <p class="price">$65.00</p>
+        </article>
+
+        <article class="product">
+          <img src="../images/product-7.jpg" alt="Product 7" />
+          <h3>Sport Socks</h3>
+          <div class="rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+          </div>
+          <p class="price">$12.00</p>
+        </article>
+
+        <article class="product">
+          <img src="../images/product-8.jpg" alt="Product 8" />
+          <h3>Minimal Watch</h3>
+          <div class="rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+          </div>
+          <p class="price">$120.00</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="offer" id="offer">
+    <div class="container offer-grid">
+      <div class="offer-img">
+        <img src="../images/exclusive.png" alt="Exclusive Product" />
+      </div>
+      <div class="offer-text">
+        <p class="kicker">Exclusive Available on This Demo</p>
+        <h2>Smart Band</h2>
+        <p>
+          A featured offer section with an exclusive product image, price,
+          and a clear call-to-action button.
+        </p>
+        <p class="offer-price">$99.00</p>
+        <a class="btn" href="#latest">Buy Now &#8594;</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="testimonials">
+    <div class="container">
+      <h2 class="title">Testimonials</h2>
+
+      <div class="grid-3 testimonials">
+        <div class="t-card">
+          <i class="fa fa-quote-left quote"></i>
+          <p>Clean design, smooth layout, and the mobile dropdown menu works great.</p>
+          <div class="rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+          </div>
+          <img class="avatar" src="../images/user-1.png" alt="Customer 1" />
+          <h3>Customer A</h3>
+        </div>
+
+        <div class="t-card">
+          <i class="fa fa-quote-left quote"></i>
+          <p>Product cards with price and rating are clear and consistent.</p>
+          <div class="rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>
+          </div>
+          <img class="avatar" src="../images/user-2.png" alt="Customer 2" />
+          <h3>Customer B</h3>
+        </div>
+
+        <div class="t-card">
+          <i class="fa fa-quote-left quote"></i>
+          <p>The one-page structure makes it easy to navigate between sections.</p>
+          <div class="rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i>
+          </div>
+          <img class="avatar" src="../images/user-3.png" alt="Customer 3" />
+          <h3>Customer C</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="brands">
+    <div class="container">
+      <h2 class="title">Top Brands</h2>
+      <div class="brands">
+        <img src="../images/logo-godrej.png" alt="Godrej" />
+        <img src="../images/logo-oppo.png" alt="Oppo" />
+        <img src="../images/logo-coca-cola.png" alt="Coca Cola" />
+        <img src="../images/logo-paypal.png" alt="PayPal" />
+        <img src="../images/logo-philips.png" alt="Philips" />
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer">
+    <div class="container footer-grid">
+      <div class="f-col">
+        <h3>Download Our App</h3>
+        <p>Download App for Android and iOS mobile phone.</p>
+        <div class="app">
+          <img src="../images/play-store.png" alt="Play Store" />
+          <img src="../images/app-store.png" alt="App Store" />
+        </div>
+      </div>
+
+      <div class="f-col">
+        <img class="f-logo" src="../images/logo-white.png" alt="Footer Logo" />
+        <p>Our purpose is to make your shopping experience simple and enjoyable.</p>
+
+        <!-- 加入你的个人照，满足“including your profile picture” -->
+        <img src="../images/me1.jpg" alt="Profile Photo"
+             style="width:72px;height:72px;border-radius:50%;object-fit:cover;margin:12px auto 0;">
+      </div>
+
+      <div class="f-col">
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="#featured">Coupons</a></li>
+          <li><a href="#latest">Blog Post</a></li>
+          <li><a href="#offer">Return Policy</a></li>
+          <li><a href="#top">Join Affiliate</a></li>
+        </ul>
+      </div>
+
+      <div class="f-col">
+        <h3>Follow Us</h3>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>YouTube</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>CISC3003 Web Programming - 2026: Student ID dc228400 + Wang Yufeng</p>
+    </div>
+  </footer>
+
+  <script>
+    var menu = document.getElementById("menu");
+    menu.style.maxHeight = "0px";
+    function toggleMenu() {
+      if (menu.style.maxHeight === "0px") menu.style.maxHeight = "360px";
+      else menu.style.maxHeight = "0px";
+    }
+  </script>
+</body>
+</html>

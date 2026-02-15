@@ -1,0 +1,59 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#1f2937;line-height:1.6;background:#fff}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+
+:root{--accent:#2563eb}
+
+.container{width:min(1100px,92%);margin:0 auto}
+.topbar{background:#0b1220;color:#e5e7eb}
+.topbar .container{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:14px}
+.brand{font-weight:700;letter-spacing:.3px}
+.brand span{color:var(--accent)}
+.nav ul{display:flex;gap:14px;flex-wrap:wrap}
+.nav a{color:#e5e7eb;font-size:14px;padding:8px 10px;border-radius:10px}
+.nav a:hover{background:rgba(255,255,255,.08)}
+
+.hero{background:linear-gradient(120deg,#f8fafc,#eef2ff);padding:46px 0}
+.hero h1{font-size:34px;line-height:1.2;margin-bottom:10px}
+.hero p{max-width:780px;color:#374151}
+
+.btn{display:inline-block;margin-top:14px;background:var(--accent);color:#fff;padding:10px 16px;border-radius:999px;font-size:14px}
+.btn:hover{filter:brightness(.95)}
+
+.section{padding:56px 0}
+.title{font-size:24px;margin-bottom:18px}
+.kicker{font-size:13px;color:#6b7280;margin-bottom:6px}
+
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:16px;box-shadow:0 10px 25px rgba(0,0,0,.04)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+
+.float-row::after{content:"";display:block;clear:both}
+.float-col{float:left}
+.w-40{width:40%}
+.w-60{width:60%}
+.pad-r{padding-right:16px}
+
+.gallery{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.gallery img{height:120px;object-fit:cover;border-radius:14px;border:1px solid #e5e7eb}
+
+.footer{background:#0b1220;color:#cbd5e1;padding:22px 0;margin-top:40px}
+.footer p{font-size:13px;text-align:center}
+
+.small{font-size:13px;color:#4b5563}
+
+@media (max-width: 900px){
+  .grid4{grid-template-columns:repeat(2,1fr)}
+  .grid3{grid-template-columns:repeat(2,1fr)}
+  .gallery{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width: 680px){
+  .grid2,.grid3,.grid4{grid-template-columns:1fr}
+  .gallery{grid-template-columns:repeat(2,1fr)}
+  .float-col{float:none;width:100%}
+  .pad-r{padding-right:0}
+}
