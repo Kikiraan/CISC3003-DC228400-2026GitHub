@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CISC3003 SugEx05 eCommerce Demo - Product Details</title>
+
+  <link rel="stylesheet" href="../css/cisc3003-SugEx05-demo.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+
+<body>
+  <header class="hero hero--simple" id="top">
+    <div class="container">
+      <div class="nav">
+        <a class="logo" href="cisc3003-SugEx05-demo.html#top">
+          <img src="../images/logo.png" alt="Logo" />
+        </a>
+
+        <nav class="navlinks" aria-label="Primary">
+          <ul id="menu">
+            <li><a href="cisc3003-SugEx05-demo.html#categories">Categories</a></li>
+            <li><a href="cisc3003-SugEx05-demo.html#featured">Featured</a></li>
+            <li><a href="cisc3003-SugEx05-demo.html#latest">Latest</a></li>
+            <li><a href="cisc3003-SugEx05-demo.html#offer">Offer</a></li>
+            <li><a href="cisc3003-SugEx05-demo.html#testimonials">Testimonials</a></li>
+            <li><a href="cisc3003-SugEx05-demo.html#brands">Brands</a></li>
+            <li><a href="allProducts.html">All Products</a></li>
+            <li><a class="active" href="productDetails.html">Product Details</a></li>
+          </ul>
+        </nav>
+
+        <div class="navicons">
+          <a class="cart" href="#footer" aria-label="Cart">
+            <img src="../images/cart.png" alt="Cart" />
+          </a>
+          <button class="menu-btn" type="button" aria-label="Menu" onclick="toggleMenu()">
+            <img src="../images/menu.png" alt="Menu" />
+          </button>
+        </div>
+      </div>
+
+      <div class="page-head">
+        <h1>Product Details</h1>
+        <p>Image gallery, product info, size selection, and related products.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section--tight single-product" id="details">
+      <div class="container sp-grid">
+        <div class="sp-images">
+          <img id="ProductImg" src="../images/product-1.jpg" alt="Classic Tee" class="sp-main" />
+          <div class="small-img-row">
+            <button class="small-img" type="button" aria-label="View image 1">
+              <img src="../images/product-1.jpg" alt="Thumbnail 1" />
+            </button>
+            <button class="small-img" type="button" aria-label="View image 2">
+              <img src="../images/product-2.jpg" alt="Thumbnail 2" />
+            </button>
+            <button class="small-img" type="button" aria-label="View image 3">
+              <img src="../images/product-3.jpg" alt="Thumbnail 3" />
+            </button>
+            <button class="small-img" type="button" aria-label="View image 4">
+              <img src="../images/product-4.jpg" alt="Thumbnail 4" />
+            </button>
+          </div>
+        </div>
+
+        <div class="sp-info">
+          <p class="crumb"><a href="cisc3003-SugEx05-demo.html">Home</a> / <a href="allProducts.html">All Products</a> / Classic Tee</p>
+          <h2>Classic Tee</h2>
+          <p class="price">$50.00</p>
+          <div class="rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>
+          </div>
+
+          <label class="field">
+            <span class="label">Select Size</span>
+            <select aria-label="Select size">
+              <option>Select Size</option>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+              <option>XL</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span class="label">Quantity</span>
+            <input type="number" value="1" min="1" aria-label="Quantity" />
+          </label>
+
+          <a class="btn" href="allProducts.html">Add to Cart &#8594;</a>
+
+          <div class="details">
+            <h3>Product Details</h3>
+            <p>
+              A clean and comfortable everyday tee. This product details page demonstrates a common eCommerce layout:
+              image gallery, ratings, sizing, quantity control, and a clear call-to-action.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="row-2">
+          <h2 class="page-h2">Related Products</h2>
+          <a class="link" href="allProducts.html">View More</a>
+        </div>
+
+        <div class="grid-4">
+          <article class="product">
+            <a href="productDetails.html"><img src="../images/product-5.jpg" alt="Related 1" /></a>
+            <h3><a href="productDetails.html">Casual Sneakers</a></h3>
+            <div class="rating">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+            </div>
+            <p class="price">$90.00</p>
+          </article>
+
+          <article class="product">
+            <a href="productDetails.html"><img src="../images/product-6.jpg" alt="Related 2" /></a>
+            <h3><a href="productDetails.html">Basic Tee</a></h3>
+            <div class="rating">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>
+            </div>
+            <p class="price">$65.00</p>
+          </article>
+
+          <article class="product">
+            <a href="productDetails.html"><img src="../images/product-7.jpg" alt="Related 3" /></a>
+            <h3><a href="productDetails.html">Sport Socks</a></h3>
+            <div class="rating">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+            </div>
+            <p class="price">$12.00</p>
+          </article>
+
+          <article class="product">
+            <a href="productDetails.html"><img src="../images/product-8.jpg" alt="Related 4" /></a>
+            <h3><a href="productDetails.html">Minimal Watch</a></h3>
+            <div class="rating">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+            </div>
+            <p class="price">$120.00</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container footer-grid">
+      <div class="f-col">
+        <h3>Download Our App</h3>
+        <p>Download App for Android and iOS mobile phone.</p>
+        <div class="app">
+          <img src="../images/play-store.png" alt="Play Store" />
+          <img src="../images/app-store.png" alt="App Store" />
+        </div>
+      </div>
+
+      <div class="f-col">
+        <img class="f-logo" src="../images/logo-white.png" alt="Footer Logo" />
+        <p>Our purpose is to make your shopping experience simple and enjoyable.</p>
+      </div>
+
+      <div class="f-col">
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="cisc3003-SugEx05-demo.html#featured">Coupons</a></li>
+          <li><a href="cisc3003-SugEx05-demo.html#latest">Blog Post</a></li>
+          <li><a href="cisc3003-SugEx05-demo.html#offer">Return Policy</a></li>
+          <li><a href="cisc3003-SugEx05-demo.html#top">Join Affiliate</a></li>
+        </ul>
+      </div>
+
+      <div class="f-col">
+        <h3>Follow Us</h3>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>Instagram</li>
+          <li>YouTube</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>CISC3003 Web Programming - 2026: Student ID dc228400 + Wang Yufeng</p>
+    </div>
+  </footer>
+
+  <script>
+    var menu = document.getElementById("menu");
+    menu.style.maxHeight = "0px";
+    function toggleMenu() {
+      if (menu.style.maxHeight === "0px") menu.style.maxHeight = "520px";
+      else menu.style.maxHeight = "0px";
+    }
+
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg = document.getElementsByClassName("small-img");
+
+    SmallImg[0].onclick = function(){ ProductImg.src = "../images/product-1.jpg"; };
+    SmallImg[1].onclick = function(){ ProductImg.src = "../images/product-2.jpg"; };
+    SmallImg[2].onclick = function(){ ProductImg.src = "../images/product-3.jpg"; };
+    SmallImg[3].onclick = function(){ ProductImg.src = "../images/product-4.jpg"; };
+  </script>
+</body>
+</html>
