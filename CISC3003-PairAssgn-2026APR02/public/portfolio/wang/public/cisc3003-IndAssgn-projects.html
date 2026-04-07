@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Projects page for the portfolio website.">
+<title>Projects | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="../images/avatar.jpg">
+
+<link rel="stylesheet" href="../css/cisc3003-IndAssgn-projects.css">
+</head>
+<body>
+<header class="top">
+  <div class="container nav">
+    <a class="brand" href="cisc3003-IndAssgn.html" aria-label="Go to home">
+      <span class="brand__dot"></span>
+      <span class="brand__text">Yufeng Wang (王禹峰)</span>
+    </a>
+
+    <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" type="button">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav__menu" aria-label="Primary">
+      <a href="cisc3003-IndAssgn.html#home" data-spy>Home</a>
+      <a href="cisc3003-IndAssgn.html#about" data-spy>About</a>
+      <a href="cisc3003-IndAssgn.html#experience" data-spy>Experience</a>
+      <a href="cisc3003-IndAssgn.html#projects" data-spy>Projects</a>
+      <a href="cisc3003-IndAssgn.html#contact" data-spy>Contact</a>
+      <a href="cisc3003-IndAssgn-qualification.html">Qualifications</a>
+      <a href="cisc3003-IndAssgn-showcase.html">Showcase</a>
+      <a href="cisc3003-IndAssgn-summary.html">Summary</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="pagehero" id="top">
+    <div class="container">
+      <h1 class="h1">Projects</h1>
+      <p class="lead">A 1-page style overview. Each project links to a separate demo sub-page.</p>
+      <div class="hero__cta">
+        <a class="btn btn--ghost" href="cisc3003-IndAssgn.html#projects">Back to Home sections</a>
+        <a class="btn" href="#list" data-spy>Jump to list</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="list">
+    <div class="container">
+      <h2 class="h2">Featured demos</h2>
+
+      <div class="grid3">
+        <article class="card">
+          <img class="card__img" src="../images/project1.jpg" alt="Project 01 thumbnail">
+          <div class="card__body">
+            <h3 class="card__title">Project Demo 01</h3>
+            <p class="muted">Responsive layout + clean components.</p>
+            <div class="row">
+              <a class="btn btn--small" href="project01/index.html">Open</a>
+              <a class="btn btn--small btn--ghost" href="cisc3003-IndAssgn-showcase.html#project1">Notes</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card__img" src="../images/project2.jpg" alt="Project 02 thumbnail">
+          <div class="card__body">
+            <h3 class="card__title">Project Demo 02</h3>
+            <p class="muted">Cards, spacing, CTA, and contact section.</p>
+            <div class="row">
+              <a class="btn btn--small" href="project02/index.html">Open</a>
+              <a class="btn btn--small btn--ghost" href="cisc3003-IndAssgn-showcase.html#project2">Notes</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card__img" src="../images/skills.jpg" alt="Coursework thumbnail">
+          <div class="card__body">
+            <h3 class="card__title">Coursework highlight</h3>
+            <p class="muted">CISC3003 exercises and HTML/CSS practice.</p>
+            <div class="row">
+              <a class="btn btn--small btn--ghost" href="cisc3003-IndAssgn-summary.html#coursework">Read</a>
+              <a class="btn btn--small" href="cisc3003-IndAssgn-showcase.html">Showcase</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="divider"></div>
+
+      <h2 class="h2">More ideas to add later</h2>
+      <ul class="bullets">
+        <li>Java / Python mini tools (e.g., data cleaner, scraper, small dashboard).</li>
+        <li>UI components library (buttons, cards, modals) for practice.</li>
+        <li>Write-up pages explaining technical decisions (what, why, how).</li>
+      </ul>
+
+      <div class="center">
+        <a class="btn" href="cisc3003-IndAssgn.html#contact">Contact section →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p class="footer__text">CISC3003 Web Programming - 2025: dc228400 Yufeng Wang (王禹峰)</p>
+    <p class="footer__sub">© <span id="year"></span> Yufeng Wang (王禹峰). Built with HTML & CSS for CISC3003.</p>
+  </div>
+</footer>
+<script src="../js/cisc3003-IndAssgn-main.js"></script>
+</body>
+</html>

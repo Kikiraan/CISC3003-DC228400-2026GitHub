@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William Lok | Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/cisc3003-IndAssgn-home.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="logo">William.</a>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="cisc3003-IndAssgn-showcase.html">Showcase</a></li>
+        </ul>
+    </div>
+
+    <div class="bars-animation">
+        <div class="bar" style="--i:6"></div>
+        <div class="bar" style="--i:5"></div>
+        <div class="bar" style="--i:4"></div>
+        <div class="bar" style="--i:3"></div>
+        <div class="bar" style="--i:2"></div>
+        <div class="bar" style="--i:1"></div>
+    </div>
+
+    <section id="home" class="home">
+        <div class="home-info">
+            <h1>LOK WANG FONG</h1>
+            <h2>I'm a 
+                <span style="--i:4;" data-text="student">student</span>
+                <span style="--i:3;" data-text="programmer">programmer</span>
+                <span style="--i:2;" data-text="designer">designer</span>
+                <span style="--i:1;" data-text="developer">developer</span>
+            </h2>
+            <p>A third-year computer science student with a passion for artificial intelligence and data engineering. Proficient in PyTorch and possesses end-to-end project experience, from hardware data acquisition to model deployment. A quick learner who can rapidly adapt to new technologies.</p>
+            <div class="btn-sci">
+                <a href="https://drive.google.com/file/d/15edPwkuSd9c8nO-BeCzj1eI1sGplcesD/view?usp=sharing" class="btn">Download CV</a>
+                <div class="sci">
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="images/home.png" alt="William Lok">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am a third-year Computer Science student at the University of Macau, passionate about artificial intelligence and data engineering. I have hands-on experience with PyTorch and complete project cycles from data acquisition to deployment. I'm a quick learner, always eager to explore new technologies and solve real-world problems.</p>
+                <div class="skills">
+                    <h3 style="color:#7cf03d; margin-bottom:15px;">Technical Skills</h3>
+                    <span>Python</span><span>C</span><span>C++</span><span>Java</span><span>PyTorch</span><span>HTML/CSS</span>
+                </div>
+            </div>
+            <div class="about-info">
+                <p><i class='bx bx-user'></i> <strong>Name:</strong> LOK WANG FONG (William)</p>
+                <p><i class='bx bx-calendar'></i> <strong>Birth:</strong> 2005/08/14</p>
+                <p><i class='bx bxs-graduation'></i> <strong>Major:</strong> Computer Science, Year 3</p>
+                <p><i class='bx bx-phone'></i> <strong>Phone:</strong> (+853) 6350 0617</p>
+                <p><i class='bx bx-envelope'></i> <strong>Email:</strong> dc32568@umac.mo</p>
+                <p><i class='bx bx-globe'></i> <strong>Languages:</strong> English, Cantonese, Mandarin</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-grid">
+            <div class="exp-card">
+                <h3>RM Robot Competition</h3>
+                <div class="date">2023</div>
+                <p>Designed automatic routes for robots to grab resources faster during the autonomous phase. Trained AI models to identify enemies and enemy bases for attack.</p>
+            </div>
+            <div class="exp-card">
+                <h3>Python Competition</h3>
+                <div class="date">2023</div>
+                <p>Scored 80.5/100 points. Ranked 22nd in Macau.</p>
+            </div>
+            <div class="exp-card">
+                <h3>Macau Invention Exhibition</h3>
+                <div class="date">2022</div>
+                <p>Developed a mobile app using Python, designed UI, calibration criteria. Used infrared sensors to upload data to IoT, then crawled data into the app.</p>
+            </div>
+            <div class="exp-card">
+                <h3>School Innovation Competition</h3>
+                <div class="date">2022</div>
+                <p>Adapted and deployed an open-source model using PyTorch to build a portrait cartoonization program. Enhanced output by algorithmically synthesizing school logo onto images.</p>
+            </div>
+            <div class="exp-card">
+                <h3>Campus Weather Competition</h3>
+                <div class="date">2021-2022</div>
+                <p>Built a weather station with automated data recording using Python web crawler to organize data into Excel and automatically generate charts.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>eCommerce Demo Site</h3>
+                <p>A fully responsive multi-page eCommerce website built with HTML/CSS, featuring home, all products, and product details pages.</p>
+                <a href="cisc3003-IndAssgn-demo01.html" class="btn" style="margin-top:15px;">View Demo-eCommerce website</a>
+                <a href="cisc3003-IndAssgn-demo02-allProducts.html" class="btn" style="margin-top:15px;">View Demo-allProducts</a>
+                <a href="cisc3003-IndAssgn-demo02-productDetails.html" class="btn" style="margin-top:15px;">View Demo-productDetails</a>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="cisc3003-IndAssgn-showcase.html" class="btn">View My Showcase</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <p><i class='bx bx-envelope'></i> dc32568@umac.mo</p>
+                <p><i class='bx bx-phone'></i> (+853) 6350 0617</p>
+                <p><i class='bx bx-map'></i> University of Macau</p>
+                <div class="sci contact-sci" style="margin-top:30px;">
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>CISC3003 Web Programming - 2026: DC325683 | LOK WANG FONG</p>
+        <p>© 2026 All rights reserved.</p>
+    </footer>
+</body>
+</html>

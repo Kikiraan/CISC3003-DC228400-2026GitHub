@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Showcase page with screenshots and short explanations.">
+<title>Showcase | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="../images/avatar.jpg">
+
+<link rel="stylesheet" href="../css/cisc3003-IndAssgn-showcase.css">
+</head>
+<body>
+<header class="top">
+  <div class="container nav">
+    <a class="brand" href="cisc3003-IndAssgn.html" aria-label="Go to home">
+      <span class="brand__dot"></span>
+      <span class="brand__text">Yufeng Wang (王禹峰)</span>
+    </a>
+
+    <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" type="button">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav__menu" aria-label="Primary">
+      <a href="cisc3003-IndAssgn.html#home" data-spy>Home</a>
+      <a href="cisc3003-IndAssgn.html#about" data-spy>About</a>
+      <a href="cisc3003-IndAssgn.html#experience" data-spy>Experience</a>
+      <a href="cisc3003-IndAssgn.html#projects" data-spy>Projects</a>
+      <a href="cisc3003-IndAssgn.html#contact" data-spy>Contact</a>
+      <a href="cisc3003-IndAssgn-qualification.html">Qualifications</a>
+      <a href="cisc3003-IndAssgn-showcase.html">Showcase</a>
+      <a href="cisc3003-IndAssgn-summary.html">Summary</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="pagehero" id="top">
+    <div class="container">
+      <h1 class="h1">Showcase</h1>
+      <p class="lead">Screenshots + short notes (use this page to demonstrate “professional and clean”).</p>
+      <div class="hero__cta">
+        <a class="btn btn--ghost" href="cisc3003-IndAssgn.html#projects">Back to Projects section</a>
+        <a class="btn" href="#project1" data-spy>Project 01</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="project1">
+    <div class="container grid2">
+      <div>
+        <h2 class="h2">Project Demo 01</h2>
+        <p>
+          Focus: responsive layout, clear typography, spacing, and navigation. This demo is built as its own sub-page.
+        </p>
+        <ul class="bullets">
+          <li>Clean “hero → sections → footer” structure.</li>
+          <li>Mobile menu toggle and smooth scrolling.</li>
+          <li>Reusable buttons, cards, and grid utilities.</li>
+        </ul>
+        <a class="btn btn--small" href="project01/index.html">Open Demo 01 →</a>
+      </div>
+      <img class="img" src="../images/showcase1.jpg" alt="Showcase image for project 01">
+    </div>
+  </section>
+
+  <section class="section section--alt" id="project2">
+    <div class="container grid2">
+      <img class="img" src="../images/showcase2.jpg" alt="Showcase image for project 02">
+      <div>
+        <h2 class="h2">Project Demo 02</h2>
+        <p>
+          Focus: component-style cards and a simple call-to-action. Also includes a contact block.
+        </p>
+        <ul class="bullets">
+          <li>Consistent card styling (radius, shadow, spacing).</li>
+          <li>Clear hierarchy with headings, muted text, and buttons.</li>
+          <li>Easy to extend into real projects.</li>
+        </ul>
+        <a class="btn btn--small" href="project02/index.html">Open Demo 02 →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="assets">
+    <div class="container">
+      <h2 class="h2">Assets to replace</h2>
+      <p class="muted">
+        The images in <code>images/</code> are placeholders generated for coursework. Replace them with your real face photo and your project screenshots.
+      </p>
+      <div class="grid3">
+        <div class="miniCard">
+          <p class="miniCard__t">avatar.jpg</p>
+          <p class="miniCard__d">Your face photo (square, 800×800+)</p>
+        </div>
+        <div class="miniCard">
+          <p class="miniCard__t">project1.jpg</p>
+          <p class="miniCard__d">Screenshot/cover for Project 01 demo</p>
+        </div>
+        <div class="miniCard">
+          <p class="miniCard__t">project2.jpg</p>
+          <p class="miniCard__d">Screenshot/cover for Project 02 demo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p class="footer__text">CISC3003 Web Programming - 2025: dc228400 Yufeng Wang (王禹峰)</p>
+    <p class="footer__sub">© <span id="year"></span> Yufeng Wang (王禹峰). Built with HTML & CSS for CISC3003.</p>
+  </div>
+</footer>
+<script src="../js/cisc3003-IndAssgn-main.js"></script>
+</body>
+</html>

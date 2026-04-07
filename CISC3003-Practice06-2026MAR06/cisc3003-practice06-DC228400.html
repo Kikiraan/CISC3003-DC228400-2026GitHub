@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CISC3003 Practice 06 - Art Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/data.js"></script>
+    <script src="js/functions.js"></script>
+</head>
+<body>
+    <main class="wrap">
+        <h1>Art Store</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <script src="js/cisc3003-practice06.js"></script>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" class="label">Subtotal</td>
+                    <td id="subtotal"></td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="label">Tax (10%)</td>
+                    <td id="tax"></td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="label">Shipping</td>
+                    <td id="shipping"></td>
+                </tr>
+                <tr class="grand">
+                    <td colspan="4" class="label">Grand Total</td>
+                    <td id="grandTotal"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+    <script>
+        document.getElementById('subtotal').textContent = '$' + subtotal.toFixed(2);
+        document.getElementById('tax').textContent = '$' + tax.toFixed(2);
+        document.getElementById('shipping').textContent = '$' + shipping.toFixed(2);
+        document.getElementById('grandTotal').textContent = '$' + grandTotal.toFixed(2);
+    </script>
+</body>
+</html>

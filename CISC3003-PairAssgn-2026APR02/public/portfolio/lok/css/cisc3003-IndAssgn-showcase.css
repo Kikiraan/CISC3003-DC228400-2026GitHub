@@ -1,0 +1,147 @@
+body {
+    background-color: #1f242d;
+    color: #fff;
+}
+
+.showcase {
+    padding: 120px 9% 60px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-title {
+    font-size: 48px;
+    color: #7cf03d;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.page-subtitle {
+    font-size: 18px;
+    color: #aaa;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.showcase-section {
+    margin-bottom: 80px;
+}
+
+.section-title {
+    font-size: 32px;
+    color: #7cf03d;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid #7cf03d;
+    padding-bottom: 10px;
+}
+
+.section-title i {
+    font-size: 36px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #2a2f3a;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #3a404b;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(124, 240, 61, 0.2);
+    border-color: #7cf03d;
+}
+
+.card h3 {
+    color: #7cf03d;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #ddd;
+    line-height: 1.6;
+}
+
+.styled-list {
+    list-style: none;
+    padding: 0;
+}
+
+.styled-list li {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+    color: #ccc;
+}
+
+.styled-list li::before {
+    content: "▹";
+    color: #7cf03d;
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+}
+
+.statement-card {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.demo-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.demo-card .btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 25px;
+    background: #7cf03d;
+    border: 2px solid #7cf03d;
+    border-radius: 40px;
+    color: #1f242d;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.demo-card .btn:hover {
+    background: transparent;
+    color: #7cf03d;
+    box-shadow: 0 0 10px #7cf03d;
+}
+
+@media (max-width: 768px) {
+    .showcase {
+        padding: 100px 5% 40px;
+    }
+    .page-title {
+        font-size: 36px;
+    }
+    .section-title {
+        font-size: 28px;
+    }
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}   
