@@ -1,1 +1,0 @@
-Put your responsive test screenshots from ui.dev here before submission.

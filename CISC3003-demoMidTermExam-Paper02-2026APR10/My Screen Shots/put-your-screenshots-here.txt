@@ -1,1 +1,0 @@
-Put your Eclipse/local/XAMPP screenshots in this folder before submission.
