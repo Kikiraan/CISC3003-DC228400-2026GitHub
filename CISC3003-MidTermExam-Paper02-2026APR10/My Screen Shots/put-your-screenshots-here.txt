@@ -1,0 +1,12 @@
+Put your required screenshots in this folder before zipping the project.
+Suggested files:
+1) 01-before-page.jpg
+2) 02-after-page-no-selection.jpg
+3) 03-after-page-customer-with-orders.jpg
+4) 04-after-page-customer-no-orders.jpg
+5) 05-github-repo-home.jpg
+6) 06-github-project-folder.jpg
+7) 07-github-before-php-source.jpg
+8) 08-github-after-php-source.jpg
+9) 09-github-book-utilities-source.jpg
+10) 10-validation-no-error.jpg

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
+    background: #f6f5f7;
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+}
+
+.page-shell {
+    min-height: 100vh;
+    padding: 24px 16px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.dashboard-container {
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18), 0 10px 10px rgba(0, 0, 0, 0.14);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 16px;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #2b75ff;
+}
+
+#username {
+    color: #418dff;
+}
+
+.user-details {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.user-details img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 12px;
+}
+
+.user-details h2 {
+    margin: 0 0 12px;
+    color: #333333;
+}
+
+.user-details p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.dashboard-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    border-radius: 20px;
+    border: 1px solid #2b99ff;
+    background: linear-gradient(to right, #2b75ff, #2ba0ff);
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 12px 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logout-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.page-footer {
+    text-align: center;
+    font-size: 14px;
+    color: #333333;
+}
+
+@media (max-width: 768px) {
+    .page-shell {
+        justify-content: flex-start;
+    }
+
+    .dashboard-container {
+        padding: 18px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .navbar h1 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .dashboard-actions {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
