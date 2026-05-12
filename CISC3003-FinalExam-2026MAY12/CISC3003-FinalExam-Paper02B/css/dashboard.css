@@ -1,0 +1,32 @@
+@import url("styles.css");
+
+.compact-hero {
+    padding-bottom: 1.5rem;
+}
+
+.table-scroll {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 880px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 0.95rem;
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: var(--surface-alt);
+}
+
+.empty-state {
+    text-align: center;
+    padding: 2rem 1rem;
+}

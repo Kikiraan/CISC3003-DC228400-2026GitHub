@@ -1,0 +1,263 @@
+:root {
+    --bg: #f4f7fb;
+    --surface: #ffffff;
+    --surface-alt: #eef5ff;
+    --text: #18263a;
+    --muted: #5b6c83;
+    --line: #cad7e7;
+    --accent: #0a7db6;
+    --accent-strong: #095b86;
+    --danger: #b34141;
+    --success: #247a52;
+    --shadow: 0 18px 42px rgba(24, 38, 58, 0.12);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
+    background:
+        radial-gradient(circle at top right, rgba(10, 125, 182, 0.13), transparent 26%),
+        linear-gradient(180deg, #f8fbff 0%, #edf3fa 100%);
+}
+
+a {
+    color: var(--accent-strong);
+}
+
+.page-shell {
+    width: min(960px, calc(100% - 2rem));
+    margin: 0 auto;
+    padding: 2rem 0 3rem;
+}
+
+.narrow-shell {
+    width: min(720px, calc(100% - 2rem));
+}
+
+.hero,
+.card,
+footer {
+    border-radius: 24px;
+}
+
+.hero {
+    padding: 2rem;
+    color: #fff;
+    background: linear-gradient(135deg, #0a7db6 0%, #073b67 100%);
+    box-shadow: var(--shadow);
+}
+
+.eyebrow {
+    margin: 0 0 0.5rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+
+.hero h1 {
+    margin: 0 0 0.75rem;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.hero-text {
+    margin: 0;
+    max-width: 64ch;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.top-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.top-nav a,
+button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 999px;
+    padding: 0.85rem 1.2rem;
+    background: #fff;
+    color: var(--accent-strong);
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.top-nav a:hover,
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 28px rgba(7, 59, 103, 0.16);
+}
+
+.card {
+    margin-top: 1.5rem;
+    padding: 1.75rem;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+}
+
+.highlight-card ol {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.info-card {
+    text-align: center;
+}
+
+.flash {
+    margin-top: 1.5rem;
+    padding: 1rem 1.25rem;
+    border-radius: 18px;
+}
+
+.flash p,
+.flash strong {
+    margin: 0;
+    display: block;
+}
+
+.flash p {
+    margin-top: 0.35rem;
+}
+
+.flash-success {
+    background: rgba(36, 122, 82, 0.12);
+    color: #1b5338;
+}
+
+.flash-error {
+    background: rgba(179, 65, 65, 0.12);
+    color: #712a2a;
+}
+
+.flash-info {
+    background: rgba(10, 125, 182, 0.12);
+    color: #074567;
+}
+
+.exam-form {
+    display: grid;
+    gap: 1rem;
+}
+
+label {
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    margin-top: 0.45rem;
+    padding: 0.85rem 1rem;
+    border-radius: 14px;
+    border: 1px solid var(--line);
+    background: var(--surface-alt);
+    color: var(--text);
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid rgba(10, 125, 182, 0.15);
+    border-color: var(--accent);
+}
+
+.choice-row {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.choice-row input {
+    width: auto;
+    margin: 0;
+}
+
+.supporting-text,
+.error-text {
+    display: block;
+    margin-top: 0.4rem;
+    font-size: 0.92rem;
+}
+
+.supporting-text {
+    color: var(--muted);
+}
+
+.error-text {
+    color: var(--danger);
+}
+
+.button-row {
+    display: flex;
+    gap: 0.85rem;
+    flex-wrap: wrap;
+}
+
+button {
+    background: var(--accent);
+    color: #fff;
+}
+
+button.secondary {
+    background: var(--surface-alt);
+    color: var(--text);
+}
+
+.debug-card pre {
+    padding: 1rem;
+    border-radius: 16px;
+    background: #0d1b2a;
+    color: #cbe9ff;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+footer {
+    margin-top: 1.5rem;
+    padding: 1rem 1.25rem;
+    text-align: center;
+    color: #fff;
+    background: rgba(24, 38, 58, 0.92);
+}
+
+@media (max-width: 720px) {
+    .page-shell {
+        width: min(100% - 1rem, 100%);
+        padding: 1rem 0 2rem;
+    }
+
+    .hero,
+    .card,
+    footer {
+        border-radius: 18px;
+    }
+
+    .top-nav,
+    .button-row {
+        flex-direction: column;
+    }
+
+    .top-nav a,
+    button {
+        width: 100%;
+    }
+}

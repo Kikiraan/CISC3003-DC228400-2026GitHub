@@ -1,0 +1,14 @@
+CREATE DATABASE IF NOT EXISTS paper02b_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE paper02b_db;
+
+CREATE TABLE IF NOT EXISTS contact_messages (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    full_name VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL,
+    phone VARCHAR(20) NOT NULL DEFAULT '',
+    topic VARCHAR(120) NOT NULL,
+    message TEXT NOT NULL,
+    debug_requested TINYINT(1) NOT NULL DEFAULT 0,
+    mail_status VARCHAR(30) NOT NULL DEFAULT 'pending',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

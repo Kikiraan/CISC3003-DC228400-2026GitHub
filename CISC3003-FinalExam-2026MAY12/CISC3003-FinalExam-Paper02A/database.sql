@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS paper02a_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE paper02a_db;
+
+CREATE TABLE IF NOT EXISTS student_feedback (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    full_name VARCHAR(100) NOT NULL,
+    email VARCHAR(150) NOT NULL,
+    phone VARCHAR(20) NOT NULL DEFAULT '',
+    age TINYINT UNSIGNED NOT NULL,
+    program VARCHAR(100) NOT NULL,
+    study_mode VARCHAR(30) NOT NULL,
+    interests VARCHAR(255) NOT NULL,
+    experience TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

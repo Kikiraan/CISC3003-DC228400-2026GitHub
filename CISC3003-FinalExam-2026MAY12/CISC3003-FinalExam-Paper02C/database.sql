@@ -1,0 +1,18 @@
+CREATE DATABASE IF NOT EXISTS paper02c_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE paper02c_db;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(120) NOT NULL,
+    student_id VARCHAR(20) NOT NULL,
+    email VARCHAR(190) NOT NULL UNIQUE,
+    password_hash VARCHAR(255) NOT NULL,
+    is_active TINYINT(1) NOT NULL DEFAULT 0,
+    account_activation_hash VARCHAR(64) DEFAULT NULL,
+    email_verified_at DATETIME DEFAULT NULL,
+    password_reset_hash VARCHAR(64) DEFAULT NULL,
+    password_reset_expires_at DATETIME DEFAULT NULL,
+    last_login_at DATETIME DEFAULT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
